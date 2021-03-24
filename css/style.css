@@ -1,4 +1,4 @@
-/*Begin your code here*/
+//*Begin your code here*/
 /*Requirement 1*/
 body{
   margin: 0;
@@ -124,14 +124,16 @@ div.package > header
   /*Requirement 10*/
   .nav_links{
     /*Your code here again.*/  
+    display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: space-between;
 
   }
 
   /*Requirement 11*/
   .package {
     /*Your code here again.*/
+    display: flex;
     flex-basis: 230px;
   } 
 }
@@ -139,16 +141,43 @@ div.package > header
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
+@media (prefers-reduced-motion){
+  #logo{
+    animation: none;
+  }
+}
+
 
 
 
 @media print { 
 
   /*Requirement 13*/
+  body{
+    background-image: none;
+  }
   /*Requirement 14*/
+  nav{
+    width: 100%;
+  }
   /*Requirement 15*/
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   /*Requirement 16*/
+  .price{
+    align-items: flex-end;
+  }
   /*Requirement 17*/
+  .package{
+    flex-basis: 200px;
+    border: 2px solid #45ADAD;
+  }
   /*Requirement 18*/
+  .gallery, #gallery{
+    display: flex;
+  }
  
 }
+
