@@ -1,10 +1,10 @@
-//*Begin your code here*/
+/*Begin your code here*/
 /*Requirement 1*/
 body{
   margin: 0;
   padding: 0;
   font-size: 16pt; 
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "sans-serif";
   background-image: url("../images/concrete_seamless.png");
 
 }
@@ -59,7 +59,7 @@ header{
 /**  UNCOMMENT THIS CODE ONCE YOU
 /**  HAVE THE SELECTOR*/
 
-div.package > header
+div.package header
 {
   background: #288080;
   border: 2px solid #45ADAD;
@@ -73,7 +73,7 @@ div.package > header
   min-height: 600px;
   /*Your code here again.*/
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content: center;
   flex-grow: 1;
 
@@ -118,7 +118,9 @@ div.package > header
   /*Requirement 10*/
   header{
     /*Your code here again.*/  
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   /*Requirement 10*/
@@ -126,7 +128,7 @@ div.package > header
     /*Your code here again.*/  
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
   }
 
