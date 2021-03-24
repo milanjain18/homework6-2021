@@ -178,7 +178,7 @@ div.package header
   }
   /*Requirement 18*/
   .gallery, #gallery{
-    display: flex;
+    display: none;
   }
  
 }
